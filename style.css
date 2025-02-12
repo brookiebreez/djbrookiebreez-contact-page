@@ -1,0 +1,108 @@
+/* style.css */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    line-height: 1.6;
+    background: #d7d2cb; /* Updated background color */
+    color: #06274f; /* Updated main text color */
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #06274f; /* Updated header background */
+    color: #d7d2cb; /* Updated header text color */
+    text-align: center;
+    padding: 1.2rem 0; /* Adjusted padding */
+}
+
+h1 {
+    font-size: 2rem; /* Smaller heading */
+    font-weight: 700;
+    letter-spacing: -0.05rem;
+}
+
+main {
+    padding: 25px; /* Adjusted padding */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 90px); /* Adjust as needed */
+}
+
+#contact-info {
+    background-color: white;
+    padding: 25px; /* Adjusted padding */
+    border-radius: 10px; /* Adjusted border radius */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /* Adjusted shadow */
+    max-width: 650px; /* Adjusted width */
+    transition: transform 0.2s ease-in-out;
+}
+
+#contact-info:hover {
+    transform: translateY(-4px); /* Adjusted hover effect */
+}.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px; /* Adjusted gap */
+}
+
+img {
+    max-width:600px; /* Adjusted image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Image is now a rectangle */
+    margin-bottom: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+}
+
+h2 {
+    font-size: 1.6rem; /* Smaller heading */
+    text-align: center;
+    margin-bottom: 18px;
+    color: #06274f; /* Updated heading color */
+}
+
+p {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #06274f; /* Updated footer background */
+    color: #d7d2cb; /* Updated footer text color */
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    margin-top: 25px; /* Adjusted margin */
+}
+
+a {
+    color: #cf4520; /* Updated link color */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #b23814; /* Darker orange on hover */
+}
+
+/* Responsive Design (adjust breakpoints as needed) */
+@media (max-width: 600px) {
+    #contact-info {
+        padding: 18px; /* Adjusted padding */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Adjusted heading size */
+    }
+
+    h2 {
+        font-size: 1.4rem; /* Adjusted heading size */
+    }
+
+    p {
+        font-size: 0.9rem; /* Adjusted font size */
+    }
+}
